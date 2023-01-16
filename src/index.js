@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./components/app";
+import Children_Props from "./components/Children-Props"
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Children_Props />
   </React.StrictMode>
 );
 
