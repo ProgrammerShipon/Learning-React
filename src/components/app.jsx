@@ -12,6 +12,7 @@ class App extends Component {
 
   state = {
     count: 1,
+    lotOfFunction: {},
   };
 
   render() {
@@ -23,17 +24,31 @@ class App extends Component {
         <button
           onClick={() => {
             // this.count++;
-            this.setState({ count: this.state.count + 1 });
-            console.log("clicked", this.state.count);
+            // this.setState({ count: this.state.count + 1 });
+            this.setState(
+              (preval) => {
+                return { count: this.state.count + 1 };
+              },
+              () => {
+                console.log("clicked", this.state.count);
+              }
+            );
           }}
         >
           add +1
         </button>{" "}
-        {"   "}
+        {"   "} {"   "}
         <button
           onClick={() => {
-            this.setState({ count: this.state.count - 1 });
-            console.log("clicked", this.state.count);
+            // this.setState({ count: this.state.count - 1 });
+            this.setState(
+              (preval) => {
+                return { count: this.state.count - 1 };
+              },
+              () => {
+                console.log("clicked", this.state.count);
+              }
+            );
           }}
         >
           {" "}
