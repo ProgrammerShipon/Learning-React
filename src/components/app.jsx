@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Apps from "./Simple-Timer-App/app";
+import Inline_styles from "./stylePractice/inlineStyles";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Apps/>
+        <Inline_styles />
       </div>
     );
   }
