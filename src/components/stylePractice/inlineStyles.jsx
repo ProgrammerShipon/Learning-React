@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import BoxA from "./box_a";
+import BoxB from "./box_b";
+
 import "./inline.style.css";
 
 const myHeader = {
@@ -27,13 +30,12 @@ class InlineStyles extends Component {
           Inline style Header Tag{" "}
         </h1>
 
-        <button> Click Me A </button>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolor provident nostrum error possimus! Accusantium.</p>
-        <button> link me B </button>
+        <button className="button"> Click Me A </button>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolor provident nostrum error possimus! Accusantium.</p>
-        <button> link me C </button>
+        <BoxA />
+        <BoxB />
+
+        <button>Another</button>
       </div>
     );
   }
